@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./templates/cfm.css">
+    <link rel="icon" href="./templates/pierre.png">
+    <title>CHIFUMI</title>
+</head>
+
+<body>
+    <section>
+        <div class="all">
+            <div class="container">
+                <div class="joueur1">
+                    <h1 class="perso">Player 1</h1>
+                    <img id="irock" src="./templates/pierre.png" alt="pierre">
+                    <img id="ipaper" src="./templates/feuille.png" alt="feuille">
+                    <img id="iscissor" src="./templates/ciseaux.png" alt="ciseaux">
+                    <p class="phrase">Choose among this 3</p>
+                    <div class="buttons">
+                        <button id="pierre"  onclick="p()">Rock</button>
+                        <button id="feuille" onclick="f()">Paper</button>
+                        <button id="ciseaux" onclick="c()">Scissor</button>
+                    </div>
+                </div>
+                <div class="joueur2">
+                    <h1 class="perso">Player 2</h1>
+                    <img id="ibrock" src="./templates/pierre.png" alt="pierre">
+                    <img id="ibpaper" src="./templates/feuille.png" alt="feuille">
+                    <img id="ibscissor" src="./templates/ciseaux.png" alt="ciseaux">
+                    <p class="phrase">Here it's a Bot</p>
+                    <div class="buttons">
+                        <input type="button" id="reset" value="Reset" onclick="r()">
+                    </div>
+                </div>
+                
+        
+            </div>
+            <div class="result">
+                
+            </div>
+            <script type="text/javascript" src="./chifumi.js"></script>
+        </div>
+    </section>
+    
+    
+</body>
+
+</html>
+
