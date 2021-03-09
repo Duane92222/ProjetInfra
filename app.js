@@ -7,7 +7,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(port, () => console.log(`url-shortener listening on port ${port}!`));
+app.listen(port, () => console.log(`app listening on port ${port}!`));
 
 // const bodyParser = require('body-parser');
 // app.use(bodyParser.urlencoded({ extended: true }));
