@@ -8,6 +8,8 @@ app.get('/', function(req, res) {
 });
 
 app.listen(port, () => console.log(`app listening on port ${port}!`));
+var jsdom = require("jsdom");
+var JSDOM = jsdom.JSDOM;
 
 GLOBAL.document = new JSDOM(html).window.document;
 // const bodyParser = require('body-parser');
