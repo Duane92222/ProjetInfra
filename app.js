@@ -9,6 +9,8 @@ app.get('/', function(req, res) {
 
 app.listen(port, () => console.log(`app listening on port ${port}!`));
 
+const docu = require('lib.dom.d.ts');
+app.use(docu.urlencoded({ extended: true }));
 // const bodyParser = require('body-parser');
 // app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.urlencoded());
@@ -27,7 +29,7 @@ app.listen(port, () => console.log(`app listening on port ${port}!`));
 //         res.send(shortUrl);
 //     });
 // });
-
+var document: Document;
 const buttons = document.querySelectorAll("button");
 let scorej1 = 0;
 let scorej2 = 0;
