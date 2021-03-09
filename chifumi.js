@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll("button");
 let scorej1 = 0;
 let scorej2 = 0;
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function () {
+    buttons[i].addEventListener('click', function() {
         const joueur = buttons[i].innerHTML;
         const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
         let result = "";
@@ -81,4 +81,5 @@ function r() {
     Result : ${result} </br>
 
     `;
+
 }
