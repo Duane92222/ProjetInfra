@@ -57,6 +57,7 @@ function f() {
     document.getElementById("ipaper").style.opacity = "100%"
     document.getElementById("irock").style.opacity = "0"
     document.getElementById("iscissor").style.opacity = "0"
+
 }
 
 function c() {
